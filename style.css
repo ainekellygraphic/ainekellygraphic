@@ -1,0 +1,381 @@
+/*! normalize.css v1.0.1 | MIT License | git.io/normalize */article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}button,html,input,select,textarea{font-family:sans-serif}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}h2{font-size:1.5em;margin:.83em 0}h3{font-size:1.17em;margin:1em 0}h4{font-size:1em;margin:1.33em 0}h5{font-size:.83em;margin:1.67em 0}h6{font-size:.75em;margin:2.33em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}blockquote{margin:1em 40px}dfn{font-style:italic}mark{background:#ff0;color:#000}p,pre{margin:1em 0}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:after,q:before{content:'';content:none}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}dl,menu,ol,ul{margin:1em 0}dd{margin:0 0 0 40px}menu,ol,ul{padding:0 0 0 40px}nav ol,nav ul{list-style:none;list-style-image:none}img{border:0;-ms-interpolation-mode:bicubic}svg:not(:root){overflow:hidden}figure{margin:0}form{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0;white-space:normal}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline}button,input{line-height:normal}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+
+/*some rules that should apply at all times unless overwritten*/
+* {
+	box-sizing: border-box;
+	background-color: #fefefe;
+	font-family: 'Oswald', sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/*using this to try to make the page responsive*/
+.wrapper {
+    position: absolute;
+    }
+  
+/*image should resize with screen size*/
+img {
+  max-width: 100%;
+}
+
+p {
+  font-family: 'Playfair Display', serif;
+}
+
+a:link {
+  text-decoration: none;
+  color: #0d0e0f;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #0d0e0f;
+}
+
+a:hover {
+  text-decoration: none;
+  background-color: #ffff00;
+}
+
+a:active {
+  background-color: #0d0e0f;
+}
+
+.header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-right: 40px;
+  text-align: center;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  background-color: #fefefe;
+  width: calc(100% - 100px);
+  text-align: right;
+}
+
+.header li {
+  color: #0d0e0f;
+  padding: 10px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  display: inline-block;
+}
+
+.logo-holder {
+  display: inline-block;
+  width: 60px;
+  float: left;
+}
+
+.logo {
+  width: 100%;
+}
+
+h1 {
+  font-weight: 900;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 72px;
+  padding: 0 20px;
+  border-bottom: 30px solid #ffff00;
+  line-height: 0;
+}
+
+#home {
+  margin-top: 200px;
+  text-align: center;
+}
+
+#about {
+  padding-top: 170px;
+}
+
+#rules {
+  padding-top: 170px;
+}
+
+#tickets {
+  padding-top: 170px;
+}
+
+#gallery {
+  padding-top: 170px;
+}
+
+#contact {
+ padding-top: 170px;
+ padding-bottom: 100px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1025px;
+  margin: 0 auto;
+}
+
+.container.reverse {
+  flex-direction: row-reverse;
+}
+
+.container > div {
+  width: 48%;
+}
+
+.cat-banana {
+  max-width: 125%;
+  max-height: auto;
+}
+
+.cat-phone {
+  max-width: 70%;
+  max-height: auto;
+}
+
+.juggle-cat {
+  max-width: 80%;
+  max-height: auto;
+}
+
+.googlemap {
+  max-width: 100%;
+  width: 100;
+}
+
+.container h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 72px;
+  padding: 0 20px;
+  border-bottom: 30px solid #ffff00;
+  line-height: 0;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: center;
+  display: inline-block;
+  width: 20%;
+  padding: 30px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container-1 {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+/*tried to get rid of this but couldn't*/
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: black;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: black;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.googlemap {
+  padding-right: 20px;
+}
+
+/*new rules for smaller size screens*/
+@media only screen and (max-width: 800px) {
+  
+  h1 {
+    font-size: 60px;
+  }
+
+.header li {
+  color: #0d0e0f;
+  font-size: 12px;
+  padding: 5px 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  display: inline-block;
+}
+
+.header img {
+ max-width: 50%;
+}
+
+.contact-icon {
+  max-width: 50px;
+}
+
+.instagram-icon {
+  max-width: 50px;
+}
+
+.facebook-icon {
+  max-width: 50px;
+}
+
+/*I had trouble getting a hamburger menu to work in the navigation. I really wanted to have one but unfortunately I just couldn't get it to work*/
+li {
+  font-size: 12px;
+}
+
+.container h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 30px;
+  padding: 0 10px;
+  border-bottom: 10px solid #ffff00;
+  line-height: 0;
+  }
+
+p {
+  font-size: 16px;
+}
+
+#home {
+  margin-top: 200px;
+  text-align: center;
+}
+
+#about {
+  padding-top: 110px;
+}
+
+#rules {
+  padding-top: 110px;
+}
+
+#tickets {
+  padding-top: 110px;
+}
+
+#gallery {
+  padding-top: 110px;
+}
+
+#contact {
+ padding-top: 100px;
+ padding-bottom: 100px;
+}
+
+.column {
+  float: center;
+  display: inline-block;
+  width: 20%;
+  padding: 10px;
+}
+
+}
+
+@media only screen and (max-width: 600px) {
+  
+  h1 {
+    font-size: 40px;
+  }
+
+.header {
+  padding-top: 10px;
+}
+
+  .header li {
+  color: #0d0e0f;
+  padding: 5px 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  display: inline-block;
+}
+
+li {
+  font-size: 12px;
+}
+
+.container h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 24px;
+  padding: 0 10px;
+  border-bottom: 10px solid #ffff00;
+  line-height: 0;
+  }
+
+p {
+  font-size: 12px;
+}
+
+#home {
+  margin-top: 200px;
+  text-align: center;
+}
+
+#about {
+  padding-top: 100px;
+}
+
+#rules {
+  padding-top: 100px;
+}
+
+#tickets {
+  padding-top: 100px;
+}
+
+#gallery {
+  padding-top: 100px;
+}
+
+#contact .container.reverse{
+ padding-top: 80px;
+ padding-bottom: 100px;
+ flex-wrap: wrap;
+ position: center;
+}
+
+}
+
+@media only screen and (max-width: 300px) {
+  
+  h1 {
+    font-size: 12px
+  }
+
+}
