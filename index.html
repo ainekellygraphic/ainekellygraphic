@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Romeo & Juliet</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+	</head>
+
+<body>
+	<div id="wrapper">
+		<header class="header">
+			
+				<a class="logo-holder" href="#">
+				<img class="logo" src="images/logo.svg" alt="logo">
+			</a>
+
+			<ul>
+				<li class="contact-icon"><a href="#contact"><img src="images/mail.png" alt="newsletter"></a></li>
+				<li class="instagram-icon"><a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="instagram"></a></li>
+				<li class="facebook-icon"><a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="facebook"></a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#rules">House Rules</a></li>
+				<li><a href="#tickets">Tickets</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</header>	
+
+		<section id="home" class="homepage">
+			<div>
+
+				<h1>Serpent and Queen</h1>
+
+				<p>Dublin's disgusting tale of Romeo and Juliet</p>
+
+				<button class="buy-now"><a href="https://www.ticketmaster.ie" alt="buy now" target="_blank">Buy Now</a></button>
+				
+			</div>
+
+			<div>
+				<img class="home-image" src="images/homebackground.png" alt="romeo and juliet">
+			</div>
+		</section>
+
+		<section id="about" class="container">
+			<div>
+
+				<h2>About</h2>
+
+				<p>So what the hell is this all about, eh?  </p>
+
+				<p>The serpent (Romeo), and queen (Juliet), are the stars of this tragic love story. It will be performed by a host of Ireland’s hottest upcoming actors and drag queens. </p>
+
+				<p>It is an inclusive event for people from all walks of like, who may be a bit different, and want to find like-minded folk. It is a space to feel truly yourself, and get a bit weird. </p>
+			</div>
+
+			<div>
+				<img class="cat-banana" src="images/catbanana.png" alt="cat on banana">
+			</div>
+
+
+		</section>
+
+		<section id="rules" class="container reverse">
+			<div>
+
+				<h2>House Rules</h2>
+
+				<p>This musical performance is a mixture of drag queens and dark comedy to convey this serious story of teenage suicide. </p>
+
+				<p>With this in mind there qill be zero tolerance for any sort of harassment. Treat everyone around you with respect. </p>
+
+				<p>You f'ck up, you're f*cked out. Simple as. </p>
+				
+			</div>
+
+			<div>
+				<img class="cat-phone" src="images/catphone.png" alt="cat on phone">
+			</div>
+
+
+		</section>
+
+
+		<section id="tickets" class="container">
+			<div>
+
+				<h2>Tickets</h2>
+
+				<p>So you want a ticket eh? No problemo. </p>
+
+				<p>Tickets are priced at €39.50 exc booking fee. </p>
+
+				<p>Head over to Ticketmaster to pick one up.</p>
+				<br>
+				<button class="buy-now"><a href="https://www.ticketmaster.ie" alt="buy now" target="_blank">Buy Now</a></button>
+				
+			</div>
+
+			<div>
+				<img class="juggle-cat" src="images/jugglecat.png" alt="juggling cat">
+			</div>
+
+
+		</section>
+
+		<section id="gallery" class="container">
+			<h2>Gallery</h2>
+			</section>
+
+			<div class="row">
+			  <div class="column">
+			    <img src="images/catbanana-1.png" alt="cat banana" onclick="myFunction(this);">
+			  </div>
+			  <div class="column">
+			    <img src="images/catphone-1.png" alt="cat phone" onclick="myFunction(this);">
+			  </div>
+			  <div class="column">
+			    <img src="images/dogman-1.png" alt="dog man" onclick="myFunction(this);">
+			  </div>
+			  <div class="column">
+			    <img src="images/drugdog-1.png" alt="drug dog" onclick="myFunction(this);">
+			  </div>
+			</div>
+
+			<div class="container-1">
+
+			  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+			  <img id="expandedImg" style="width:20%">
+
+			  <div id="imgtext"></div>
+			</div>
+
+		<section id="contact" class="container reverse">
+			<div>
+
+				<h2>Contact</h2>
+
+				<p>We want to take back our city, and make use of the spaces around us. The show is hosted in one of Dublin’s abandoned buildings. This event runs every Thursday, Friday, and Saturday from Jun 25th 2020 - July 25th 2020.</p>
+
+				<p>This event will be in the Old City Arts Centre on Moss St. See that map on the left? That'll show you where to go.</p>
+
+				<p>Any problems? Giz a buzz on 01 234 5678, or holla at event@serpentandqueen.com </p>
+				
+			</div>
+
+			<div>
+				<iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d595.4480764249322!2d-6.251618!3d53.346974!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTPCsDIwJzQ5LjEiTiA2wrAxNScwNS44Ilc!5e0!3m2!1sen!2sus!4v1575577035387!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+			</div>
+
+
+		</section>
+	</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+<script type="text/javascript">
+var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+</script>
+
+
+</body>
+
+	</html>
